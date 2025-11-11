@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Gráficos do Trabalho</title>
+</head>
+<body>
+
+<h2>Exercício 1: Média por Tipo de Treino</h2>
+
+<div id="grafico1"></div>
+<script type="module">
+  import define from "https://api.observablehq.com/d/59c1ce65633895b5.js?v=3";
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+
+  const runtime1 = new Runtime();
+  runtime1.module(define, name => {
+    // Substitua NOME_DA_CELULA_73 pelo nome da célula do gráfico no embed
+    if (name === "NOME_DA_CELULA_73") return new Inspector(document.querySelector("#grafico1"));
+  });
+</script>
+
+<br><br>
+
+<h2>Exercício 2: Scatterplot por Gênero</h2>
+
+<div id="grafico2"></div>
+<script type="module">
+  import define from "https://api.observablehq.com/d/59c1ce65633895b5.js?v=3";
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+
+  const runtime2 = new Runtime();
+  runtime2.module(define, name => {
+    // Substitua NOME_DA_CELULA_56 pelo nome da célula do gráfico no embed
+    if (name === "NOME_DA_CELULA_56") return new Inspector(document.querySelector("#grafico2"));
+  });
+</script>
+
+</body>
+</html>
